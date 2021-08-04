@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "sefaz-nfce-reader",
+    "slug": "sefaz-nfce-reader",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#820ad1"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.mauri870.sefaznfcereader"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
