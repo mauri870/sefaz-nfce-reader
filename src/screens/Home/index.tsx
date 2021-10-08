@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Clipboard } from "react-native";
+import { View, StyleSheet } from "react-native";
+import Clipboard from "expo-clipboard";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import { Feather } from "@expo/vector-icons";
 import { Button, Text, Dialog, Portal, Provider } from "react-native-paper";
@@ -26,7 +27,7 @@ export default function Home() {
         }
         setDialogVisible(true);
         setNfceId(id);
-        Clipboard.setString(id);
+        copyToClipboard();
     };
 
     const copyToClipboard = () => {
